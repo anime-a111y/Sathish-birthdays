@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday Sathish 🎉</title>
+
+<style>
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background: yellow;
+    color: black;
+    cursor: pointer;
+}
+
+button:hover {
+    background: black;
+    color: yellow;
+}
+
+#msg {
+    margin-top: 30px;
+    font-size: 22px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🎂 Happy Birthday Sathish 🎂</h1>
+    <p>Bro... you're getting older but still not wiser 😂</p>
+
+    <button onclick="showMessage()">Click for Surprise 😎</button>
+
+    <p id="msg"></p>
+</div>
+
+<script>
+function showMessage() {
+    const messages = [
+        "😂 Happy Birthday da! Don't act your age!",
+        "🎉 Another year older… still same nonsense!",
+        "😎 You’re not old… just outdated version!",
+        "🔥 Bro you’re now officially uncle level!",
+        "🍰 Eat cake fast before your age catches up!"
+    ];
+
+    let random = messages[Math.floor(Math.random() * messages.length)];
+    document.getElementById("msg").innerHTML = random;
+}
+</script>
+
+</body>
+</html>
